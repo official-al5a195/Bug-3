@@ -1,19 +1,11 @@
 body {
   margin: 0;
-  overflow: hidden;
-}
-
-.controls {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 canvas {
-  position: absolute;
+  display: block;
 }
+
 svg {
-  position: absolute;
-  display: none;
+  pointer-events: none;
 }
