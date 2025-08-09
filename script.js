@@ -24,6 +24,10 @@ const controlsWebGL = new THREE.OrbitControls(camera, renderer.domElement);
 const tl = gsap.timeline({ repeat: -1, yoyo: true });
 
 const pathElement = container.querySelector('path'); // get heart path inside the panel
+// after const pathElement = container.querySelector('path');
+
+container.querySelector('svg').style.display = 'none';
+
 const length = pathElement.getTotalLength();
 const vertices = [];
 
