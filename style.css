@@ -1,9 +1,47 @@
 body {
   margin: 0;
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
 }
 
-canvas {
+/* Fixed Spotify panel */
+.left-panel {
+  width: 25%;
+  height: 100%;
+  background-color: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Animation area */
+.right-panel {
+  margin-left: 25%;
+  width: 75%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.right-panel canvas {
+  width: 100%;
+  height: 100%;
   display: block;
+}
+
+.right-panel svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
 }
 
 svg {
