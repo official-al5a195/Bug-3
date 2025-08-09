@@ -47,3 +47,7 @@ body {
 svg {
   pointer-events: none;
 }
+
+.right-panel svg {
+  display: none;
+}
